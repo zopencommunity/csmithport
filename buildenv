@@ -26,7 +26,7 @@ export ZOPEN_RUNTIME_DEPS=""
 export ZOPEN_CONFIGURE="cmake"
 export ZOPEN_CONFIGURE_OPTS="-B ../build -DCMAKE_INSTALL_PREFIX=\${ZOPEN_INSTALL_DIR}"
 export ZOPEN_MAKE="cmake"
-export ZOPEN_MAKE_OPTS="--build ../build --parallel \\$ZOPEN_NUM_JOBS --config Release"
+export ZOPEN_MAKE_OPTS="--build ../build --parallel \$ZOPEN_NUM_JOBS --config Release"
 export ZOPEN_MAKE_MINIMAL=Y
 export ZOPEN_INSTALL="cmake"
 export ZOPEN_INSTALL_OPTS="--install ../build"
