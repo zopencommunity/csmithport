@@ -51,7 +51,7 @@ zopen_check_results() {
 }
 
 zopen_get_version() {
-  echo "1.0.0" # Modify to echo the version of your tool/library
+  csmith --version | head -n1 | awk '{print $2}'
 }
 
 
