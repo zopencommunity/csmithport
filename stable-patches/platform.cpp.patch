@@ -1,0 +1,13 @@
+diff --git a/src/platform.cpp b/src/platform.cpp
+index a657539..1acce2e 100644
+--- a/src/platform.cpp
++++ b/src/platform.cpp
+@@ -75,7 +75,7 @@ static unsigned __int64 read_time(void) {
+ #elif defined(__s390__)
+ static unsigned long long read_time(void) {
+   unsigned long long clk;
+-  asm volatile("stckf %0" : "=Q"(clk) : : "cc");
++  __builtin_s390_stckf(&clk);
+   return clk;
+ }
+ #elif defined(__i386__) || defined(__x86_64__)
