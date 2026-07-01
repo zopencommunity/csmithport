@@ -1,5 +1,5 @@
 # bump: csmith-version /CSMITH_VERSION="(.*)"/ https://github.com/csmith-project/csmith.git|semver:*
-# CSMITH_VERSION="V.R.M"
+# CSMITH_VERSION="2.3.0"
 
 ###
 ### Build control file for the csmith port
